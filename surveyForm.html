@@ -7,11 +7,11 @@
 	<p id="description">This form is to sign up for our daily specials, straight to your inbox or cell phone!</p>
 	<form id="survey-form">
 		<label for="name" id="name-label">First and Last Name:</label><br />
-		<input type="text" id="name" name="name" placeholder="First Name Last Name"><br />
+		<input type="text" id="name" name="name" placeholder="First Name Last Name" required><br />
 		<label for="email" id="email-label">Email:</label><br />
-		<input type="email" id="email" name="email" placeholder="example@example.com"><br />
+		<input type="email" id="email" name="email" placeholder="example@example.com" required><br />
 		<label for="number" id="number-label">Phone Number:</label><br />
-		<input type="tel" id="number" name="number" placeholder="ex. 123-456-7890" pattern="[0-9]{3} - [0-9]{3} - [0-9]{4}" required><br />
+		<input type="number" id="number" name="number" placeholder="ex. 123-456-7890" pattern="[0-9]{3} - [0-9]{3} - [0-9]{4}" required><br />
 		<label for="restrictions" id="dropdown-label">Do you have any dietary restrictions?</label><br />
 		<select id="dropdown">
 			<option value="yes">Yes</option>
@@ -31,6 +31,6 @@
 		<label for="curbside"> Curbside Pick-up</label><br />
 		<label for="addComments">Do you have anything else that you would like to share with us?</label><br />
 		<textarea id="addComments" rows="4" cols="50"></textarea><br />
-		<input type="submit" value="Submit">
+		<input type="submit" id="submit" value="Submit">
 	</form>
 </body>
